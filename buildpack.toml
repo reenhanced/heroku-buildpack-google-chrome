@@ -5,17 +5,18 @@ api = "0.10"
 [buildpack]
 id = "reenhanced/heroku-buildpack-google-chrome"
 version = "0.0.2"
-name = "Heroku buildpack for Headless Google Chrome. Re-enhanced for external buildpacks"
+name = "Heroku Buildpack Google Chrome"
+description = "Heroku's buildpack for Headless Google Chrome"
 homepage = "https://github.com/reenhanced/heroku-buildpack-google-chrome"
-
-[[targets]]
-arch = "amd64"
-
-[[stacks]]
-id = "heroku-18"
 
 [[stacks]]
 id = "heroku-20"
 
 [[stacks]]
 id = "heroku-22"
+
+[[stacks]]
+id = "io.buildpacks.stacks.bionic"
+
+[[stacks]]
+id = "io.buildpacks.stacks.jammy"
